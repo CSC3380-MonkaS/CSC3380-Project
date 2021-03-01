@@ -1,0 +1,14 @@
+// Currently 3 questions asked. 
+
+Action or Adventure
+
+Question 
+$ option one [+1 action]
+# option two
+
+Romantic or Romantic Comedy
+History or Sci-Fi
+Thriller or Horror
+Live action or Animation
+Old Releases or New Releases
+Drama or Comedy

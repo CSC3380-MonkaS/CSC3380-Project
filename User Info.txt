@@ -1,0 +1,12 @@
+Genre List: Action, Drama, Fantasy
+
+Genre list x, y, z
+
+Object Movie p% match
+
+
+action: 1
+adventure: 0
+Drama: 7
+Fantaasy:1
+
