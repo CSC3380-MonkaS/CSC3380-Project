@@ -77,11 +77,20 @@ def read_question_file(myFile):
             temp_cur_ques = temp_cur_ques.strip()
             temp_options = file.readline().strip().split(" or ")
             temp_points = file.readline().strip().split(" # ")
-            temp_p1 = temp_points[0].split()
-            temp_p2 = temp_points[1].split()
+            temp_p1 = temp_points[0].split(", ")
+            temp_p2 = temp_points[1].split(", ")
             qs.append(myQuestion(temp_cur_ques, temp_options, temp_p1, temp_p2))
             file.readline()
 
     file.close()
 
     return qs
+
+def listToString(s):
+
+    str = ""
+
+    for i in s:
+        str += i
+
+    return str

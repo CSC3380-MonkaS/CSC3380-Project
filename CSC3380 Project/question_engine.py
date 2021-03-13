@@ -20,7 +20,7 @@ import PySimpleGUI as sg
 # @since 3/11/2021
 
 def question_engine(question_file):
-    sg.theme('Dark Grey 5')  # Add a touch of color
+
     userPref = []
     userScore = []
 
@@ -28,11 +28,9 @@ def question_engine(question_file):
 
     for idx in range(len(questions)):
 
-        layout = [[sg.Text(questions[idx].getQ()[0], font="Fixedsys")],
-                  [sg.Button(questions[idx].getQ()[1][0], button_color='Blue', key="-O1-", font="Fixedsys",
-                             size=(20, 10)),
-                   sg.Button(questions[idx].getQ()[1][1], button_color="red", key="-O2-", font="Fixedsys",
-                             size=(20, 10))]]
+        layout = [[sg.Text(questions[idx].getQ()[0])],
+                  [sg.Button(questions[idx].getQ()[1][0], key="-O1-", button_color='blue'),
+                   sg.Button(questions[idx].getQ()[1][1], key="-O2-", button_color='red')]]
 
         window = sg.Window("Movie Recommendation Demo", layout)
 
@@ -57,8 +55,7 @@ def question_engine(question_file):
                         userScore.append(0)
                     userScore[userPref.index(questions[idx].getQ()[3][genre])] += 1
                 break
-    window.close()
-    #for i in range(len(userPref)):
-    #    print(userPref[i])
-    #    print(userScore[userPref.index(userPref[i])])
+
+        window.close()
+
     return userPref, userScore

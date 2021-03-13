@@ -17,7 +17,7 @@ from question_engine import *
 # @since 3/11/2021
 
 def convert(l):
-    return ' '.join(l)
+    return ', '.join(l)
 
 
 # Generates the User's info file
@@ -49,7 +49,7 @@ def user_file_generator(questions_file):
         u_pref = sorted(user_preferences)
         u_pref = convert(u_pref)
         file.write("Genre List: " + u_pref + "\n\n\n")
-        u_pref = u_pref.split()
+        u_pref = u_pref.split(", ")
 
         file.write("Movie Genre Percent Matches\n\n")
 
