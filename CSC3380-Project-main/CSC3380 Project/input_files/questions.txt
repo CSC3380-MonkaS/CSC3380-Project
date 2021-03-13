@@ -1,0 +1,11 @@
+Which do you prefer?
+Action or Adventure
+Action # Adventure
+
+Romantic or Romantic Comedy?
+Romantic or Romantic Comedy
+Romantic # Romantic Comedy
+
+What Movie do you like better?
+Terminator or The Matrix
+Action, Adventure, Horror # Adventure, Thriller
