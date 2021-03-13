@@ -57,7 +57,6 @@ def user_file_generator(questions_file):
             percentages.append(round((user_scores[user_preferences.index(u_pref[pf])]/score_total) * 100.0, 2))
             file.write(u_pref[pf] + ": " + str(round((user_scores[user_preferences.index(u_pref[pf])]/score_total) * 100.0, 2)) + "%\n")
 
-        #file.write("\n\n\n\nYour Top 10 Movies You May Enjoy")
-
-
     file.close()
+
+    return u_pref, percentages

@@ -3,11 +3,12 @@ Developed by MonkaS
 Copyright 2021
 
 
-Genre List: Adventure, Romantic Comedy, Thriller
+Genre List: Action, Adventure, Horror, Romantic Comedy
 
 
 Movie Genre Percent Matches
 
-Adventure: 50.0%
-Romantic Comedy: 25.0%
-Thriller: 25.0%
+Action: 20.0%
+Adventure: 40.0%
+Horror: 20.0%
+Romantic Comedy: 20.0%

@@ -3,7 +3,7 @@ class myMovie:
         self._name = name
         self._score = score
         self._rating = rating
-        self._genre = genre.split()
+        self._genre = genre.split(", ")
         self._des = des
 
     def getInfo(self):
