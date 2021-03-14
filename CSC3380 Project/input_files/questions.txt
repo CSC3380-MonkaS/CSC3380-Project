@@ -9,3 +9,39 @@ Romantic # Romantic Comedy
 What Movie do you like better?
 Terminator or The Matrix
 Action, Adventure, Horror # Adventure, Thriller
+
+Action or Animation?
+Action or Animation
+Action # Animation
+
+Animation or Comedy?
+Animation or Comedy
+Animation # Comedy
+
+Comedy or Drama?
+Comedy or Drama
+Comedy # Drama
+
+Drama or Romance?
+Drama or Romance
+Drama # Romance
+
+Romance or Horror?
+Romance or Horror
+Romance # Horror
+
+Horror or Action?
+Horror or Action
+Horror # Action
+
+Action or Drama?
+Action or Drama
+Action # Drama
+
+Animation or Romance?
+Animation or Romance
+Animation # Romance
+
+Comedy or Horror?
+Comedy or Horror
+Comedy # Horror
