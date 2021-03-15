@@ -1,47 +1,51 @@
-Which do you prefer?
-Action or Adventure
-Action # Adventure
+Romance or Animation?
+Romance or Animation
+Romance # Animation
 
-Romantic or Romantic Comedy?
-Romantic or Romantic Comedy
-Romantic # Romantic Comedy
+Horror or Romance?
+Horror or Romance
+Horror # Romance
 
-What Movie do you like better?
-Terminator or The Matrix
-Action, Adventure, Horror # Adventure, Thriller
+Crime or Horror?
+Crime or Horror
+Crime # Horror
 
-Action or Animation?
-Action or Animation
-Action # Animation
+Sci-fi or Crime?
+Sci-fi or Crime
+Sci-fi # Crime
 
-Animation or Comedy?
-Animation or Comedy
-Animation # Comedy
+Fantasy or Sci-fi?
+Fantasy or Sci-fi
+Fantasy # Sci-fi
 
-Comedy or Drama?
-Comedy or Drama
-Comedy # Drama
+Thriller or Fantasy?
+Thriller or Fantasy
+Thriller # Fantasy
 
-Drama or Romance?
-Drama or Romance
-Drama # Romance
+Comedy or Thriller?
+Comedy or Thriller
+Comedy # Thriller
 
-Romance or Horror?
-Romance or Horror
-Romance # Horror
+Mystery or Comedy?
+Mystery or Comedy
+Mystery # Comedy
 
-Horror or Action?
-Horror or Action
-Horror # Action
+Adventure or Mystery?
+Adventure or Mystery
+Adventure # Mystery
+
+Drama or Adventure?
+Drama or Adventure
+Drama # Adventure
 
 Action or Drama?
 Action or Drama
 Action # Drama
 
-Animation or Romance?
-Animation or Romance
-Animation # Romance
+Animation or Action?
+Animation or Action
+Animation # Action
 
-Comedy or Horror?
-Comedy or Horror
-Comedy # Horror
+
+
+
