@@ -1,0 +1,47 @@
+Romance or Animation?
+Romance or Animation
+Romance # Animation
+
+Horror or Romance?
+Horror or Romance
+Horror # Romance
+
+Crime or Horror?
+Crime or Horror
+Crime # Horror
+
+Sci-fi or Crime?
+Sci-fi or Crime
+Sci-fi # Crime
+
+Fantasy or Sci-fi?
+Fantasy or Sci-fi
+Fantasy # Sci-fi
+
+Thriller or Fantasy?
+Thriller or Fantasy
+Thriller # Fantasy
+
+Comedy or Thriller?
+Comedy or Thriller
+Comedy # Thriller
+
+Mystery or Comedy?
+Mystery or Comedy
+Mystery # Comedy
+
+Adventure or Mystery?
+Adventure or Mystery
+Adventure # Mystery
+
+Drama or Adventure?
+Drama or Adventure
+Drama # Adventure
+
+Action or Drama?
+Action or Drama
+Action # Drama
+
+Animation or Action?
+Animation or Action
+Animation # Action
