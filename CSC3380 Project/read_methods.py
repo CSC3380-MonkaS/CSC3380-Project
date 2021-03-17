@@ -29,7 +29,7 @@ def read_movie_file(myFile):
             if not cur_movie:
                 break
 
-            temp_name = cur_movie.strip()
+            temp_name = cur_movie +"\n"
             temp_score = file.readline().strip()
             temp_rating = file.readline().strip()
             temp_genre = file.readline()
@@ -39,7 +39,7 @@ def read_movie_file(myFile):
                 cur_line = file.readline()
                 if "$$$$" in cur_line.strip():
                     break
-                temp_des = temp_des + cur_line
+                temp_des = temp_des + cur_line +"---------------------------------------------------------"
 
             movieList.append(myMovie(temp_name, temp_score, temp_rating, temp_genre, temp_des))
 
