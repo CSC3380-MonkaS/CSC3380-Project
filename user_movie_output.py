@@ -59,7 +59,7 @@ def user_movie_output(user_pref, percents, movie_file):
                               movie_list[movie].getInfo()[4] +
                               "\nRated: " + movie_list[movie].getInfo()[2] +
                               "\n\nScore: " + movie_list[movie].getInfo()[1] + "/100"+
-                              "\n\nGenere(s): " + convert(gInMovie) +
+                              "\n\nGenre(s): " + convert(gInMovie) +
                               "\n---------------------------------------------------------")
 
     user_picks = sorted(user_picks)
