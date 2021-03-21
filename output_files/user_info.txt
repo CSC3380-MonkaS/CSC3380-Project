@@ -3,19 +3,16 @@ Developed by MonkaS
 Copyright 2021
 
 
-Genre List: Action, Adventure, Animation, Comedy, Crime, Drama, Fantasy, Horror, Mystery, Sci-fi, Thriller
+Genre List: Animation, Crime, Drama, Horror, Mystery, Romance, Sci-Fi, Thriller
 
 
 Movie Genre Percent Matches
 
-Action: 8.33%
-Adventure: 8.33%
 Animation: 8.33%
-Comedy: 8.33%
 Crime: 8.33%
-Drama: 8.33%
-Fantasy: 8.33%
-Horror: 16.67%
-Mystery: 8.33%
-Sci-fi: 8.33%
-Thriller: 8.33%
+Drama: 16.67%
+Horror: 8.33%
+Mystery: 16.67%
+Romance: 8.33%
+Sci-Fi: 16.67%
+Thriller: 16.67%

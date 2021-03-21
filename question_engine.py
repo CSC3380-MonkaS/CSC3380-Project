@@ -35,7 +35,7 @@ def question_engine(question_file):
 
         layout = [[sg.Column(layout_column, element_justification='center')]]
 
-        window = sg.Window("Movie Recommendation Demo", layout)
+        window = sg.Window("MonkaS Movie Recommendation System", layout)
 
         while True:
             event, values = window.read()

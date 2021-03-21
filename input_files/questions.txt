@@ -10,13 +10,13 @@ Crime or Horror?
 Crime or Horror
 Crime # Horror
 
-Sci-fi or Crime?
-Sci-fi or Crime
-Sci-fi # Crime
+Sci-Fi or Crime?
+Sci-Fi or Crime
+Sci-Fi # Crime
 
-Fantasy or Sci-fi?
-Fantasy or Sci-fi
-Fantasy # Sci-fi
+Fantasy or Sci-Fi?
+Fantasy or Sci-Fi
+Fantasy # Sci-Fi
 
 Thriller or Fantasy?
 Thriller or Fantasy

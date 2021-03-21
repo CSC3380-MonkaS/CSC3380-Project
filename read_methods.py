@@ -32,7 +32,7 @@ def read_movie_file(myFile):
             temp_name = cur_movie.strip()
             temp_score = file.readline().strip()
             temp_rating = file.readline().strip()
-            temp_genre = file.readline()
+            temp_genre = file.readline().replace('\n', '')
             temp_des = ""
 
             while True:

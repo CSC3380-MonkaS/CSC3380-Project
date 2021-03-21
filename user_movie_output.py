@@ -67,7 +67,7 @@ def user_movie_output(user_pref, percents, movie_file):
     congratulations(convert(max_prefs))
 
     if len(user_picks) > 0:
-        sg.PopupScrolled(*user_picks, title="Your Picked Movies!")
+        sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(100, 50))
 
     else:
         unfortunately()
