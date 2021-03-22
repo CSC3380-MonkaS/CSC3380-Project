@@ -19,7 +19,7 @@ def congratulations(genre):
 
     layout = [[sg.Column(layout_column, element_justification='center')]]
 
-    window = sg.Window("Movie Recommendation Demo", layout, size=(800, 500))
+    window = sg.Window("Congratulations!", layout, size=(800, 500))
     while True:
         event, values = window.read()
         if event == sg.WIN_CLOSED:
