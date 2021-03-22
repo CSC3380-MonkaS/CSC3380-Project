@@ -66,14 +66,14 @@ def user_movie_output(user_pref, percents, movie_file):
                               "\nRated: " + movie_list[movie].getInfo()[2] +
                               "\n\nScore: " + movie_list[movie].getInfo()[1] + "/100"+
                               "\n\nGenre(s): " + convert(gInMovie) +
-                              "\n------------------------------------------------------------------------------------------------------------------")
+                              "\n---------------------------------------------------------------------------------------------------------------")
 
     user_picks = sorted(user_picks)
 
     congratulations(convert(max_prefs))
 
     if len(user_picks) > 0:
-        sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(125, 41))
+        sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(62, 19), font="Arial 20")
 
     else:
         unfortunately()
