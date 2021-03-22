@@ -6,14 +6,20 @@ import PySimpleGUI as sg
 
 def congratulations(genre):
     layout_column = [[sg.Input(visible=False)],
-                     [sg.Text("Congratulations!", font="Fixedsys 30", justification='center', size=(22,2))],
-                     [sg.Text("Your chosen genre(s):", font="Fixedsys 20", justification='center', size=(22, 2))],
-                     [sg.Text(genre, justification= 'center', font="Times")],
+                     [sg.Text()],
+                     [sg.Text()],
+                     [sg.Text("Congratulations!", font="Fixedsys 35", justification='center', size=(100,2))],
+                     [sg.Text()],
+                     [sg.Text("Your chosen genre(s):", font="Fixedsys 25", justification='center', size=(100, 2))],
+                     [sg.Text(genre, justification= 'center', font="Times 20", size=(75, 0))],
+                     [sg.Text()],
+                     [sg.Text()],
+                     [sg.Text()],
                      [sg.Button("Continue to Movies", button_color="Blue", pad=(50,50), font="Fixedsys 20", key="-01-")]]
 
     layout = [[sg.Column(layout_column, element_justification='center')]]
 
-    window = sg.Window("Movie Recommendation Demo", layout)
+    window = sg.Window("Movie Recommendation Demo", layout, size=(800, 500))
     while True:
         event, values = window.read()
         if event == sg.WIN_CLOSED:
@@ -67,7 +73,8 @@ def user_movie_output(user_pref, percents, movie_file):
     congratulations(convert(max_prefs))
 
     if len(user_picks) > 0:
-        sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(100, 50))
+        sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(125, 41))
 
     else:
         unfortunately()
+
