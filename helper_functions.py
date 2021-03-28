@@ -18,5 +18,19 @@ def convert(l):
     return ', '.join(l)
 
 
+# Finds the intersect between two sets of data
+#
+#
+# function: intersect
+#
+# returns:
+#          A list of the intersect of two sets of data
+#
+# parameters:
+#          a [string[]] The first set of data
+#          b [string[]] The isecond set of data
+#
+# @author MonkaS
+# @since 3/11/2021
 def intersect(a, b):
     return list(set(a) & set(b))
