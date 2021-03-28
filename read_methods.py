@@ -86,6 +86,18 @@ def read_question_file(myFile):
 
     return qs
 
+#  Converts list to string
+#
+# function: read_movie_file
+#
+# returns:
+#           str - A string
+#
+# parameters:
+#           s [list] A list
+#
+# @author MonkaS
+# @since 3/11/2021
 def listToString(s):
 
     str = ""
