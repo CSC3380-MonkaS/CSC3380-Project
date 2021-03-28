@@ -42,7 +42,7 @@ def question_engine(question_file):
 
             if event == sg.WIN_CLOSED:
                 quit()
-
+#This occurs when the user selects the first option and updates the users prefrences with the selected genre
             elif event == "-O1-":
                 for genre in range(len(questions[idx].getQ()[2])):
                     if questions[idx].getQ()[2][genre] not in userPref:
@@ -50,7 +50,8 @@ def question_engine(question_file):
                         userScore.append(0)
                     userScore[userPref.index(questions[idx].getQ()[2][genre])] += 1
                 break
-
+                
+# This occurs when the user selects the second option and updates the users prefrences with the selected genre
             elif event == "-O2-":
                 for genre in range(len(questions[idx].getQ()[3])):
                     if questions[idx].getQ()[3][genre] not in userPref:
