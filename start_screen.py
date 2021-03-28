@@ -1,5 +1,15 @@
 import PySimpleGUI as sg
 
+#  Creates/Displays start screen
+#
+# function: startScreen
+#
+# returns: N/A
+#
+# parameters: N/A
+#
+# @author MonkaS
+# @since 3/11/2021
 def startScreen():
     sg.theme('Dark Grey 5')
     layout_column = [[sg.Input(visible=False)],
@@ -24,6 +34,17 @@ def startScreen():
             window.close()
             break
 
+            
+#  Creates/Displays information screen
+#
+# function: infoScreen
+#
+# returns: N/A
+#
+# parameters: N/A
+#
+# @author MonkaS
+# @since 3/11/2021
 def infoScreen():
     sg.theme('Dark Grey 5')
     layout_column = [[sg.Input(visible=False)],
