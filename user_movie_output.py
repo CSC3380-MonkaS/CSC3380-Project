@@ -3,7 +3,16 @@ from helper_functions import *
 from read_methods import read_movie_file
 import PySimpleGUI as sg
 
-
+# Creates/Displays congratulations screen
+#
+# function: congratulations
+#
+# returns: N/A
+#
+# parameters: genre [string] String of genres
+#
+# @author MonkaS
+# @since 3/11/2021
 def congratulations(genre):
     layout_column = [[sg.Input(visible=False)],
                      [sg.Text("Congratulations!", font="Fixedsys 30", justification='center', size=(22,2))],
@@ -23,6 +32,16 @@ def congratulations(genre):
             window.close()
             break
 
+# Creates/Displays unfortunately screen
+#
+# function: unfortunately
+#
+# returns: N/A
+#
+# parameters: N/A
+#
+# @author MonkaS
+# @since 3/11/2021
 def unfortunately():
     layout_column = [[sg.Input(visible=False)],
                      [sg.Text("Unfortunately, there are no movies with your favorite generes in our database!", font="Fixedsys 30", justification='center', size=(30, 3))],
@@ -40,6 +59,18 @@ def unfortunately():
             window.close()
             break
 
+# Creates/Displays user movie reccomendation output screen
+#
+# function: user_movie_output
+#
+# returns: N/A
+#
+# parameters: user_pref [string[]] List of user preferences
+#             percents [float[]] List of user percent match for genres
+#             movie_file File containing movies
+#
+# @author MonkaS
+# @since 3/11/2021
 def user_movie_output(user_pref, percents, movie_file):
 
     sg.theme('Dark Grey 5')
