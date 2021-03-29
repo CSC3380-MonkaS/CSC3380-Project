@@ -15,8 +15,8 @@ class question_engine:
     # returns:
     #           qs - A list of all the questions.
     #                Each index is of myQuestion type
-    # parameters:
-    #           myFile [string] The input text file of questions
+    # parameters: N/A
+    # 
     #
     # @author MonkaS
     # @since 3/11/2021
@@ -56,8 +56,8 @@ class question_engine:
     #          userScore - Number of "points" the user has
     #                      for each genre
     #
-    # parameters:
-    #             question_file [string]  Text file containing the questions
+    # parameters: N/A
+    #  
     #
     # @author MonkaS
     # @since 3/11/2021
