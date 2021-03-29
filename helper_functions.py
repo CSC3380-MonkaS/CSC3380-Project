@@ -28,7 +28,7 @@ def convert(l):
 #
 # parameters:
 #          a [string[]] The first set of data
-#          b [string[]] The isecond set of data
+#          b [string[]] The second set of data
 #
 # @author MonkaS
 # @since 3/11/2021
