@@ -67,7 +67,7 @@ class output_UI:
     # @author MonkaS
     # @since 3/11/2021
 
-    def congratulations(self):
+    def __congratulations(self):
         max_prefs = convert(self.max_prefs())
 
         layout_column = [[sg.Input(visible=False)],
@@ -100,7 +100,7 @@ class output_UI:
     # @since 3/11/2021
 
     @staticmethod
-    def unfortunately(self):
+    def __unfortunately(self):
         layout_column = [[sg.Input(visible=False)],
                          [sg.Text("Unfortunately, there are no movies with your favorite generes in our database!", font="Fixedsys 30", justification='center', size=(30, 3))],
                          [sg.Button("OK", button_color="Blue", font="Fixedsys 20", key="-01-")]]
