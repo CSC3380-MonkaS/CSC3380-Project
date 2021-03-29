@@ -60,7 +60,7 @@ class output_UI:
     #
     # returns: N/A
     #
-    # parameters: genre [string] String of genres
+    # parameters: N/A
     #
     # @author MonkaS
     # @since 3/11/2021
