@@ -1,18 +1,18 @@
 import PySimpleGUI as sg
 
-#  Creates/Displays start screen
-#
-# function: startScreen
-#
-# returns: N/A
-#
-# parameters: N/A
-#
-# @author MonkaS
-# @since 3/11/2021
-
-
 class input_UI:
+
+    
+    #  Creates/Displays start screen
+    #
+    # function: startScreen
+    #
+    # returns: N/A
+    #
+    # parameters: N/A
+    #
+    # @author MonkaS
+    # @since 3/11/2021
 
     def startScreen(self):
         sg.theme('Dark Grey 5')
