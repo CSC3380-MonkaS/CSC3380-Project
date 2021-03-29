@@ -14,8 +14,8 @@ class user_file_generator:
     #
     # function: user_file_generate
     #
-    # returns: u_pref      [list]   User preferences
-    #          percentages [list]   User percentages of genres liked
+    # returns: u_pref      User preferences
+    #          percentages User's percentages of genres liked
     #
     #
     # parameters: N/A
