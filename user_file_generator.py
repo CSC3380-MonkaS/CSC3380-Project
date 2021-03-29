@@ -1,27 +1,28 @@
 from helper_functions import *
 
-# Generates the User's info file
-# regarding which genre of movies
-# he/she would be most interested in
-#
-#
-# function: user_file_generate
-#
-# returns: N/A
-#
-#
-# parameters: question_file [string] The input text file containing the questions
-#
-#
-# @author MonkaS
-# @since 3/11/2021
-
 
 class user_file_generator:
 
     def __init__(self, u_prefs, u_scores):
         self.user_preferences = u_prefs
         self.user_scores = u_scores
+        
+    # Generates the User's info file
+    # regarding which genre of movies
+    # he/she would be most interested in
+    #
+    #
+    # function: user_file_generate
+    #
+    # returns: u_pref      [list]   User preferences
+    #          percentages [list]   User percentages of genres liked
+    #
+    #
+    # parameters: N/A
+    #
+    #
+    # @author MonkaS
+    # @since 3/11/2021
 
     def user_file_generate(self):
 
