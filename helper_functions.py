@@ -34,3 +34,25 @@ def convert(l):
 # @since 3/11/2021
 def intersect(a, b):
     return list(set(a) & set(b))
+
+#  Converts list to string
+#
+# function: list_to_string
+#
+# returns:
+#           str - A string
+#
+# parameters:
+#           s [list] A list
+#
+# @author MonkaS
+# @since 3/11/2021
+
+def listToString(s):
+
+    str = ""
+
+    for i in s:
+        str += i
+
+    return str
