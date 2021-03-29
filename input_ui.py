@@ -49,6 +49,7 @@ class input_UI:
     #
     # @author MonkaS
     # @since 3/11/2021
+
     @staticmethod
     def infoScreen():
         sg.theme('Dark Grey 5')
