@@ -32,6 +32,7 @@ def convert(l):
 #
 # @author MonkaS
 # @since 3/11/2021
+
 def intersect(a, b):
     return list(set(a) & set(b))
 

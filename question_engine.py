@@ -1,5 +1,4 @@
-from MandQclasses import *
-from helper_functions import *
+from MandQclasses import myQuestion
 import PySimpleGUI as sg
 
 class question_engine:

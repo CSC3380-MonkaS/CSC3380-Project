@@ -1,6 +1,6 @@
 from helper_functions import *
 import PySimpleGUI as sg
-from MandQclasses import *
+from MandQclasses import myMovie
 
 class output_UI:
 
