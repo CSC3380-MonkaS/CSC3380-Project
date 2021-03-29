@@ -5,9 +5,9 @@ from MandQclasses import myMovie
 class output_UI:
 
     def __init__(self, percents, user_pref, movie_file):
-        self.percents = percents
-        self.user_pref = user_pref
-        self.movie_file = movie_file
+        self.percents = percents                            # Calculated genre precentages
+        self.user_pref = user_pref                          # User's Preffered genres
+        self.movie_file = movie_file                        # Location of movies text file
 
     #  Reads the movie text file
     #  and loads it into a list
@@ -19,8 +19,7 @@ class output_UI:
     #          movieList - A list of all the movies and their details.
     #                      Each index is of myMovie type.
     #
-    # parameters:
-    #           myFile [string] The text file containing all the movies
+    # parameters: N/A
     #
     # @author MonkaS
     # @since 3/11/2021
@@ -122,9 +121,7 @@ class output_UI:
     #
     # returns: N/A
     #
-    # parameters: user_pref [string[]] List of user preferences
-    #             percents [float[]] List of user percent match for genres
-    #             movie_file File containing movies
+    # parameters: N/A
     #
     # @author MonkaS
     # @since 3/11/2021
@@ -156,6 +153,20 @@ class output_UI:
         else:
             self.__unfortunately()
 
+            
+            
+     
+    # Gets the genre(s) with the highest percentage
+    #
+    # function: max_prefs
+    #
+    # returns: N/A
+    #
+    # parameters: N/A
+    #
+    # @author MonkaS
+    # @since 3/29/2021
+    
     def max_prefs(self):
         max_p = []
         max_percent = max(self.percents)
