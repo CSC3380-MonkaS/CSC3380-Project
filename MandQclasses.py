@@ -18,11 +18,11 @@ class myMovie:
     # @author MonkaS
     # @since 3/11/2021
     def __init__(self, name, score, rating, genre, des):
-        self._name = name
-        self._score = score
-        self._rating = rating
-        self._genre = genre.split(", ")
-        self._des = des
+        self._name = name                 # name of Movies
+        self._score = score               # score/100 of the movie
+        self._rating = rating             # rating of the movie
+        self._genre = genre.split(", ")   # Genre(s) of movies seperated by commas
+        self._des = des                   # Description of the movie
 
     # This method returns information from a movie object
     #
@@ -65,10 +65,10 @@ class myQuestion:
     # @author MonkaS
     # @since 3/11/2021
     def __init__(self, ques, o, p1, p2):
-        self._ques = ques
-        self._o = o
-        self._p1 = p1
-        self._p2 = p2
+        self._ques = ques   # Question posed
+        self._o = o         # Options for answers
+        self._p1 = p1       # Genres to add points to if option 1 chosen
+        self._p2 = p2       # Genres to add points to if option 2 chosen
 
     # is method returns information from a question object
     #
