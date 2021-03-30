@@ -1,6 +1,5 @@
-from helper_functions import *
 import PySimpleGUI as sg
-from MandQclasses import myMovie
+from recommend_list_gen import *
 
 class output_UI:
 
@@ -8,51 +7,6 @@ class output_UI:
         self.percents = percents                            # Calculated genre precentages
         self.user_pref = user_pref                          # User's Preffered genres
         self.movie_file = movie_file                        # Location of movies text file
-
-    #  Reads the movie text file
-    #  and loads it into a list
-    #  (i.e. movieList)
-    #
-    # function: __read_movie_file
-    #
-    # returns:
-    #          movieList - A list of all the movies and their details.
-    #                      Each index is of myMovie type.
-    #
-    # parameters: N/A
-    #
-    # @author MonkaS
-    # @since 3/11/2021
-
-    def __read_movie_file(self):
-
-        movieList = []
-
-        with open(self.movie_file) as file:
-            while True:
-
-                cur_movie = file.readline()
-
-                if not cur_movie:
-                    break
-
-                temp_name = cur_movie.strip()
-                temp_score = file.readline().strip()
-                temp_rating = file.readline().strip()
-                temp_genre = file.readline().replace('\n', '')
-                temp_des = ""
-
-                while True:
-                    cur_line = file.readline()
-                    if "$$$$" in cur_line.strip():
-                        break
-                    temp_des = temp_des + cur_line
-
-                movieList.append(myMovie(temp_name, temp_score, temp_rating, temp_genre, temp_des))
-
-        file.close()
-
-        return movieList
 
     # Creates/Displays congratulations screen
     #
@@ -65,8 +19,9 @@ class output_UI:
     # @author MonkaS
     # @since 3/11/2021
 
-    def __congratulations(self):
-        max_prefs = convert(self.max_prefs())
+    def __congratulations(self, max_p):
+
+        max_prefs = helper_functions().convert(max_p)
 
         layout_column = [[sg.Input(visible=False)],
                          [sg.Text("Congratulations!", font="Fixedsys 30", justification='center', size=(22,2))],
@@ -98,7 +53,7 @@ class output_UI:
     # @since 3/11/2021
 
     @staticmethod
-    def __unfortunately(self):
+    def __unfortunately():
         layout_column = [[sg.Input(visible=False)],
                          [sg.Text("Unfortunately, there are no movies with your favorite generes in our database!", font="Fixedsys 30", justification='center', size=(30, 3))],
                          [sg.Button("OK", button_color="Blue", font="Fixedsys 20", key="-01-")]]
@@ -115,7 +70,7 @@ class output_UI:
                 window.close()
                 break
 
-    # Creates/Displays user movie reccomendation output screen
+    # Creates/Displays user movie recommendation output screen
     #
     # function: user_movie_output
     #
@@ -129,50 +84,14 @@ class output_UI:
     def user_movie_output(self):
 
         sg.theme('Dark Grey 5')
-        movie_list = self.__read_movie_file()
-        max_prefs = self.max_prefs()
-        user_picks = []
 
-        for movie in range(len(movie_list)):
-            gInMovie = intersect(max_prefs, movie_list[movie].getInfo()[3])
-            if len(gInMovie) != 0:
-                user_picks.append(movie_list[movie].getInfo()[0] + "\n\n" +
-                                  movie_list[movie].getInfo()[4] +
-                                  "\nRated: " + movie_list[movie].getInfo()[2] +
-                                  "\n\nScore: " + movie_list[movie].getInfo()[1] + "/100"+
-                                  "\n\nGenre(s): " + convert(gInMovie) +
-                                  "\n---------------------------------------------------------")
+        r_gen = recommendation_list_generator(self.percents, self.user_pref, self.movie_file)
+        max_prefs, user_picks = r_gen.generate_list()
 
-        user_picks = sorted(user_picks)
-
-        self.__congratulations()
+        self.__congratulations(max_prefs)
 
         if len(user_picks) > 0:
             sg.PopupScrolled(*user_picks, title="Your Specially Selected Movie Recommendations!", button_color="Blue", size=(100, 45))
 
         else:
             self.__unfortunately()
-
-            
-            
-     
-    # Gets the genre(s) with the highest percentage
-    #
-    # function: max_prefs
-    #
-    # returns: N/A
-    #
-    # parameters: N/A
-    #
-    # @author MonkaS
-    # @since 3/29/2021
-    
-    def max_prefs(self):
-        max_p = []
-        max_percent = max(self.percents)
-
-        for p in range(len(self.user_pref)):
-            if max_percent == self.percents[p]:
-                max_p.append(self.user_pref[p])
-
-        return max_p

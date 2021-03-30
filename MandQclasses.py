@@ -1,27 +1,10 @@
 class myMovie:
-    # This method initializes movie objects
-    #
-    #
-    # function: __init__
-    #
-    # returns: N/A
-    #
-    #
-    # parameters: self [myMovie] A movie object
-    #             name [string] The name of the movie
-    #             score [int] The score of the movie
-    #             rating [string] The rating of the movie
-    #             genre [string[]] The genre(s) of the movie
-    #             des [string] A description of the movie
-    #
-    #
-    # @author MonkaS
-    # @since 3/11/2021
+
     def __init__(self, name, score, rating, genre, des):
         self._name = name                 # name of Movies
         self._score = score               # score/100 of the movie
         self._rating = rating             # rating of the movie
-        self._genre = genre.split(", ")   # Genre(s) of movies seperated by commas
+        self._genre = genre.split(", ")   # Genre(s) of movies separated by commas
         self._des = des                   # Description of the movie
 
     # This method returns information from a movie object
@@ -47,23 +30,7 @@ class myMovie:
 
 
 class myQuestion:
-    # This method initializes question objects
-    #
-    #
-    # function: __init__
-    #
-    # returns: N/A
-    #
-    #
-    # parameters: self [myQuestion] A question object
-    #             ques [string] The question
-    #             o [string] The " or " between options
-    #             p1 [string] First option
-    #             p2 [string] Second option
-    #
-    #
-    # @author MonkaS
-    # @since 3/11/2021
+
     def __init__(self, ques, o, p1, p2):
         self._ques = ques   # Question posed
         self._o = o         # Options for answers
