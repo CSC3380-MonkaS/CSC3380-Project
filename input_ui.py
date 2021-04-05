@@ -17,7 +17,7 @@ class input_UI:
     def startScreen(self):
         sg.theme('Dark Grey 5')
         layout_column = [[sg.Input(visible=False)],
-                         [sg.Text("Welcome to MonkaS Movie Recommendation System", font="Fixedsys 30", justification='center', size=(22,2))],
+                         [sg.Text("Welcome to monkaS Movie Compatibility Tester", font="Fixedsys 30", justification='center', size=(22,2))],
                          [sg.Text()],
                          [sg.Text()],
                          [sg.Text("To get started, press the start button below.", font="Fixedsys 20", justification='center', size=(22, 2))],
